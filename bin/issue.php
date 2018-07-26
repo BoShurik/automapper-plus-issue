@@ -26,6 +26,7 @@ $item = new Item();
 $item->setName('Item Name');
 $item->setPrice(1000);
 $order->setItems([$item]);
+$order->setPrice(1000);
 
 dump($order);
 

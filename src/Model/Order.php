@@ -10,9 +10,30 @@ namespace App\Model;
 class Order
 {
     /**
+     * @var float
+     */
+    private $price;
+
+    /**
      * @var Item[]
      */
     private $items;
+
+    /**
+     * @return float
+     */
+    public function getPrice(): float
+    {
+        return $this->price;
+    }
+
+    /**
+     * @param float $price
+     */
+    public function setPrice(float $price): void
+    {
+        $this->price = $price;
+    }
 
     /**
      * @return Item[]

@@ -15,7 +15,13 @@
     },
     "require": {
         "php": "^7.2",
-        "mark-gerarts/auto-mapper-plus": "^1.2",
+        "mark-gerarts/auto-mapper-plus": "dev-destination-context@dev",
         "symfony/var-dumper": "^4.1"
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/BoShurik/automapper-plus"
+        }
+    ]
 }

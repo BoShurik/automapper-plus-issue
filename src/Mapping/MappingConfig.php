@@ -11,6 +11,7 @@ use App\DTO\ItemDTO;
 use App\DTO\OrderDTO;
 use App\Model\Item;
 use App\Model\Order;
+use AutoMapperPlus\AutoMapper;
 use AutoMapperPlus\AutoMapperInterface;
 use AutoMapperPlus\Configuration\AutoMapperConfig;
 use AutoMapperPlus\MappingOperation\Operation;
@@ -25,7 +26,7 @@ class MappingConfig
             ->reverseMap()
             ->forMember('items', Operation::mapFrom(function (OrderDTO $dto, AutoMapperInterface $mapper, array $context) {
                 /** @var Order $destination */
-                if (isset($context['destination']) && ($destination = $context['destination'])) {
+                if (isset($context[AutoMapper::DESTINATION_CONTEXT]) && ($destination = $context[AutoMapper::DESTINATION_CONTEXT])) {
                     $items = [];
                     foreach ($dto->items as $index => $itemDto) {
                         if (isset($destination->getItems()[$index])) {

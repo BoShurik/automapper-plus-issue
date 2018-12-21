@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/BoShurik/automapper-plus.git",
-                "reference": "fcb08c606cb267990bb871cf7a4bc2d9fcf6a460"
+                "reference": "68a787c231c601ae0109b161cf2ff920abf16a8f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/BoShurik/automapper-plus/zipball/fcb08c606cb267990bb871cf7a4bc2d9fcf6a460",
-                "reference": "fcb08c606cb267990bb871cf7a4bc2d9fcf6a460",
+                "url": "https://api.github.com/repos/BoShurik/automapper-plus/zipball/68a787c231c601ae0109b161cf2ff920abf16a8f",
+                "reference": "68a787c231c601ae0109b161cf2ff920abf16a8f",
                 "shasum": ""
             },
             "require": {
@@ -57,7 +57,7 @@
             "support": {
                 "source": "https://github.com/BoShurik/automapper-plus/tree/destination-context"
             },
-            "time": "2018-12-21T11:41:16+00:00"
+            "time": "2018-12-21T11:59:48+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
